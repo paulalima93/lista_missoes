@@ -1,0 +1,101 @@
+.guilda-container {
+  display: flex; justify-content: center;
+  padding: 40px 20px;
+}
+
+.quadro-missoes {
+  background-color: #1e293b;
+  width: 100%; max-width: 700px;
+  border-radius: 16px;
+  border: 2px solid #334155;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+  overflow: hidden;
+}
+
+.cabecalho-quadro {
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  padding: 30px; text-align: center;
+  border-bottom: 2px solid #334155;
+}
+
+.titulo-guilda {
+  margin: 0; color: #fbbf24;
+  font-size: 2rem; text-transform: uppercase; letter-spacing: 2px;
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+}
+
+.form-adicionar {
+  display: flex; gap: 10px;
+  padding: 20px; background-color: #0f172a88;
+}
+
+.input-missao {
+  flex: 1; padding: 12px 15px;
+  background-color: #0f172a; border: 1px solid #475569;
+  color: white; border-radius: 8px; font-size: 1rem;
+}
+
+.select-rank {
+  padding: 12px; background-color: #0f172a; border: 1px solid #475569;
+  color: white; border-radius: 8px; font-weight: bold; cursor: pointer;
+}
+
+.btn-adicionar {
+  background-color: #fbbf24; color: #0f172a;
+  border: none; padding: 0 20px; border-radius: 8px;
+  font-weight: bold; cursor: pointer; transition: 0.2s;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.btn-adicionar:hover { background-color: #f59e0b; }
+
+.filtros {
+  display: flex; justify-content: center; gap: 10px;
+  padding: 15px; border-bottom: 1px solid #334155;
+}
+
+.btn-filtro {
+  background: none; border: 1px solid #475569;
+  color: #94a3b8; padding: 8px 16px; border-radius: 20px;
+  cursor: pointer; transition: 0.2s; font-weight: bold;
+}
+
+.btn-filtro.ativo {
+  background-color: #38bdf8; color: #0f172a; border-color: #38bdf8;
+}
+
+.lista-missoes { padding: 20px; display: flex; flex-direction: column; gap: 15px; }
+
+.missao-item {
+  display: flex; align-items: center; justify-content: space-between;
+  background-color: #273548; padding: 15px;
+  border-radius: 12px; border-left: 4px solid #475569;
+  transition: 0.2s;
+}
+
+.missao-item:hover { transform: translateX(5px); }
+.missao-item.status-concluida { opacity: 0.6; border-left-color: #22c55e; }
+
+.missao-esquerda { display: flex; align-items: center; gap: 15px; flex: 1; }
+.texto-missao { font-size: 1.1rem; font-weight: 500; }
+.texto-riscado { text-decoration: line-through; color: #94a3b8; }
+
+.btn-check { background: none; border: none; cursor: pointer; color: #94a3b8; padding: 0; }
+.btn-check.checked { color: #22c55e; }
+
+.btn-deletar {
+  background: none; border: none; cursor: pointer;
+  color: #ef4444; padding: 8px; border-radius: 8px; transition: 0.2s;
+}
+.btn-deletar:hover { background-color: #ef444433; }
+
+.tag-rank {
+  padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 900;
+}
+
+/* Cores dos Ranks das Missões */
+.rank-s { background-color: #fef08a; color: #854d0e; }
+.rank-a { background-color: #e9d5ff; color: #6b21a8; }
+.rank-b { background-color: #bfdbfe; color: #1e3a8a; }
+.rank-c { background-color: #bbf7d0; color: #14532d; }
+.rank-d { background-color: #e2e8f0; color: #334155; }
